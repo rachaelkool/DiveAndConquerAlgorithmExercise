@@ -1,3 +1,7 @@
+// Constraints:
+
+// Time Complexity: O(log(n))
+
 function findFloor() {
   
 }
