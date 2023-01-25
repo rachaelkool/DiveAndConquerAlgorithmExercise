@@ -3,8 +3,13 @@
 // Time Complexity: O(log(n))
 
 function findRotationCount(arr, left = 0, right = arr.length - 1) {
-    if (right < left) return 0;
-    if (right === left) return left;
+    if (right < left) {
+      return 0;
+    }
+    if (right === left) {
+      return left;
+    }
+    
     let middle = Math.floor((left + right) / 2)
   
     if (middle < right && arr[middle + 1] < arr[middle])
